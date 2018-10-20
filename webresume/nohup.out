@@ -1,0 +1,38 @@
+[17/Oct/2018 04:08:54] "GET / HTTP/1.1" 200 1137
+Not Found: /favicon.ico
+[17/Oct/2018 04:08:54] "GET /favicon.ico HTTP/1.1" 404 2550
+[17/Oct/2018 04:09:05] "GET /hello-world.txt HTTP/1.1" 200 11
+[17/Oct/2018 04:09:48] "GET /api/ HTTP/1.1" 200 5286
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121200
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1735
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 37045
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1262
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/js/jquery-3.3.1.min.js HTTP/1.1" 200 86927
+[17/Oct/2018 04:09:48] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+Internal Server Error: /image.jpg
+Traceback (most recent call last):
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/venv/lib/python3.5/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ubuntu/web-app-ci-cd-with-travis-ci-dcam4/webresume/frontend/views.py", line 19, in image_file
+    return HttpResponse(image, content_type="image/jpeg")
+NameError: name 'image' is not defined
+[17/Oct/2018 04:10:03] "GET /image.jpg HTTP/1.1" 500 122507
+Performing system checks...
+
+System check identified no issues (0 silenced).
+October 17, 2018 - 04:07:14
+Django version 2.1.1, using settings 'webresume.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[17/Oct/2018 04:14:18] "GET / HTTP/1.1" 200 1137
+[17/Oct/2018 04:14:25] "GET /image.jpg HTTP/1.1" 200 44969
+[17/Oct/2018 04:17:59] "GET / HTTP/1.1" 200 1137
