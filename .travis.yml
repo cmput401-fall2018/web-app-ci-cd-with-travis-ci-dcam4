@@ -22,6 +22,3 @@ addons:
 
 
 before_script:
-
-sudo chmod u+x chromedriver
-sudo mv chromedriver /usr/bin
