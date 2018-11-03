@@ -14,3 +14,6 @@ script:
 - export CHROME_BIN=chromium-browser
 
 before_script:
+
+sudo chmod u+x chromedriver
+sudo mv chromedriver /usr/bin
