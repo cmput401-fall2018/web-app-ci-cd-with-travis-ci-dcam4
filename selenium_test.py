@@ -7,7 +7,7 @@ def test_home():
     options = Options()
     options.add_argument("--no--sandbox")
     options.add_argument("--headless")
-    driver = webdriver.Chrome(chrome_options=options)
+    driver = webdriver.Chrome(options=options)
     driver.get("http://162.246.157.152:8000")
     
     name = driver.find_element_by_id("name")
