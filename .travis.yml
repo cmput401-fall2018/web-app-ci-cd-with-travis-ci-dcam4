@@ -10,7 +10,7 @@ script:
 
 - wget https://chromedriver.storage.googleapis.com/2.43/chromedriver_linux64.zip
 - unzip chromedriver_linux64.zip -d 
-/home/travis/virtualenv/python2.7.12/bin/
+/home/travis//virtualenv/python3.6/bin/
 - export CHROME_BIN=chromium-browser
 
 before_script:
